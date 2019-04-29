@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
-    int health;
+    public static int health;
     public GameObject enemy;
+    public GameObject deadOverlay;
 	// Use this for initialization
 	void Start () {
         health = 5;
@@ -16,6 +17,8 @@ public class PlayerHealth : MonoBehaviour {
         {
             GameObject.FindGameObjectWithTag("camera").transform.SetParent(null);
             Instantiate(enemy, transform.position - new Vector3(0, -10, 0), new Quaternion()).tag = "player";
+            Instantiate(deadOverlay);
+            Cursor.visible = true;
             Destroy(GameObject.FindGameObjectWithTag("hitbox"));
             Destroy(gameObject.transform.parent.gameObject);
         }

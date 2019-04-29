@@ -19,6 +19,7 @@ public class EnemyHealth : MonoBehaviour {
         if(health <= 0)
         {
             Destroy(gameObject);
+            Score.score += 1;
         }
 	}
     void OnTriggerEnter(Collider other)

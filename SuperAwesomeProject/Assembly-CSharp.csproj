@@ -77,6 +77,11 @@
     <Compile Include="Assets\Scripts\TerrainCollision.cs" />
     <Compile Include="Assets\Scripts\TerrainGeneration.cs" />
     <Compile Include="Assets\Scripts\TileTexturing.cs" />
+    <Compile Include="Assets\UI\Animate.cs" />
+    <Compile Include="Assets\UI\Health.cs" />
+    <Compile Include="Assets\UI\quitButton.cs" />
+    <Compile Include="Assets\UI\Replay.cs" />
+    <Compile Include="Assets\UI\Score.cs" />
     <Compile Include="Assets\UI\StoryScroll.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Titan/Documents/GitHub/Models/LD44/SuperAwesomeProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
